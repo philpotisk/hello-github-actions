@@ -8,4 +8,4 @@ jobs:
     - uses: actions/checkout@master
     - uses: ./action-a
       env:
-        MY_NAME: "Phil"
+        MY_NAME: ${{secrets.MY_NAME}}
